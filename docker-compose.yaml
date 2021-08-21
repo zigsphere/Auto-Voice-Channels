@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  voice:
+    build: .
+    restart: on-failure
+    container_name: autovoice
+    volumes:
+      - ./config.json:/opt/voice/config.json
+
